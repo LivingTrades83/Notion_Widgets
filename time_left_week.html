@@ -73,13 +73,13 @@
     // days_in_this_month = new Date( now.getFullYear(), now.getMonth()+1, 0).getDate(); 
     // week starts on Monday
    
-    if(now.getDay() == 5 ){
+    if(now.getDay() == 0 ){
       d = 6
     }
     else{
        d = now.getDay() - 1
     }
-    days = 6 - d ;
+    days = 5 - d ;
     hours = 23 - now.getHours();
     minutes = 59 - now.getMinutes();
     left_days.innerHTML = days + "<br> <span class=\"small\"> days </span>"
